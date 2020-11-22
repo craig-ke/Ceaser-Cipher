@@ -20,5 +20,11 @@ public class CeaserCypherTest {
         String expectedOutput = "H";
         assertEquals(expectedOutput, testCeaserCypher.cypher("G", 1));
     }
+    @Test
+    public void cypher_checkEncryptionOfAWord_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "IFMMP";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("HELLO", 1));
+    }
 
 }

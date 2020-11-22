@@ -6,7 +6,10 @@ public class CeaserCypher {
         } else {
             String cypherText = "";
             int length = encryptionString.length();
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < length; i++) {
+                char ch = encryptionString.charAt(i);
+                if (Character.isLetter(ch));
+            }
             return cypherText;
         }
         return errorMessage;
