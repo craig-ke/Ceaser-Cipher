@@ -50,10 +50,25 @@ public class CeaserCypher {
                         char c = (char) (ch - key);
                         if (c < 'A') {
                             cypherText += (char) (ch + (26 - key));
+                        } else {
+                            cypherText += c;
                         }
-                        return cypherText;
+                    } else if (Character.isLowerCase(ch)){
+                        char c = (char)(ch - key);
+                        if (c < 'a'){
+                            cypherText += (char)(ch + (26-key));
+                        } else {
+                            cypherText += c;
+                        }
                     }
-                    return errorMessage;
+                }
+                else {
+                    cypherText += ch;
                 }
             }
+            return cypherText;
+        }
+        return errorMessage;
+    }
+}
 
