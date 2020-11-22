@@ -1,5 +1,5 @@
 public class CeaserCypher {
-    public String cypher(String encryptionString, int key) {
+    public String cypher(String encryptionString, int key) {   //passes the first six cypher test
         String errorMessage = "";
         if (key < 1 || key > 25) {
             errorMessage = "The key must be between 1 and 25";
