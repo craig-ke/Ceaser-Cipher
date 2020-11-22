@@ -32,6 +32,11 @@ public class CeaserCypherTest {
         String expectedOutput = "Ifmmp";
         assertEquals(expectedOutput, testCeaserCypher.cypher("Hello", 1));
     }
-
+    @Test
+    public void cypher_checkSentenceCypher_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 23));
+    }
 
 }
