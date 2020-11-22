@@ -26,5 +26,12 @@ public class CeaserCypherTest {
         String expectedOutput = "IFMMP";
         assertEquals(expectedOutput, testCeaserCypher.cypher("HELLO", 1));
     }
+    @Test
+    public void cypher_checkCaseInsensitivity_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "Ifmmp";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("Hello", 1));
+    }
+
 
 }
