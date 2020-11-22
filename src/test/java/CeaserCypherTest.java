@@ -14,5 +14,11 @@ public class CeaserCypherTest {
         String expectedOutput = "Enter letters only, and the key must between 1 and 25";
         assertEquals(expectedOutput, testCeaserCypher.cypher("Encrypt234", 27));
     }
+    @Test
+    public void cypher_checkEncryptionOfSingleLetter_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "H";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("G", 1));
+    }
 
 }
