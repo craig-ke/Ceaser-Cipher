@@ -8,4 +8,11 @@ public class CeaserCypherTest {
         String expectedOutput = "The key must between 1 and 25";
         assertEquals(expectedOutput, testCeaserCypher.cypher("Encrypt", 27));
     }
+    @Test
+    public void cypher_checkBothStringAndKey_String(){
+        CeaserCypher testCeaserCypher = new CeaserCypher();
+        String expectedOutput = "Enter letters only, and the key must between 1 and 25";
+        assertEquals(expectedOutput, testCeaserCypher.cypher("Encrypt234", 27));
+    }
+
 }
