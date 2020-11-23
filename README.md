@@ -13,7 +13,7 @@ If downloaded, unzip the downloaded file
 Navigate into the unzipped folder
 Open with IntelliJ or any other compatible Java program.
 
-## User Stories
+## How it works!!
 1. The shift key must be between 1 and 25.
 2. Only alphabetic letters are shifted. Numbers and other characters are returned unshifted.
 3. During encryption, letters are shifted forward by the given shift key.
