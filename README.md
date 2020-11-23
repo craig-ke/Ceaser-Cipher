@@ -4,14 +4,21 @@
 In this application you can be able to implement ceaser cypher code.
 The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23 (the shift parameter is used as the key):
 
-Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Cipher:   XYZABCDEFGHIJKLMNOPQRSTUVW
+Plain:     THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+Cipher:    QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD
 
 # Setup/Installation Requirements
 Download/ clone the repository to your local machine
 If downloaded, unzip the downloaded file
 Navigate into the unzipped folder
 Open with IntelliJ or any other compatible Java program.
+
+## User Stories
+1. The shift key must be between 1 and 25.
+2. Only alphabetic letters are shifted. Numbers and other characters are returned unshifted.
+3. During encryption, letters are shifted forward by the given shift key.
+4. During decryption, letters are shifted backward by the given shift key.
+
 
 # Known Bugs
 There are some issues which had not been solved yet but coming soon, shall be solved.

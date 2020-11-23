@@ -1,16 +1,14 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
-import java.io.Console;
+
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Ceaser Cipher");
         System.out.println("Welcome to ceaser cypher. Do you want to encrypt or decrypt?");
         String userChoice = bufferedReader.readLine();
-        if (userChoice.equalsIgnoreCase("encrypt")){
+        if (userChoice.equalsIgnoreCase("encrypt")) {
             System.out.println("Enter text to encrypt");
             String userEncryptionText = bufferedReader.readLine();
             System.out.println("Enter shift key");
@@ -21,7 +19,7 @@ public class App {
             System.out.println("Check out your ciphered text below:");
             System.out.println(encryptedText);
             System.out.println("-------------------------------------------");
-        } else if (userChoice.equalsIgnoreCase("decrypt")){
+        } else if (userChoice.equalsIgnoreCase("decrypt")) {
             System.out.println("Enter text to decrypt");
             String userDecryptionText = bufferedReader.readLine();
             System.out.println("Enter shift key");
@@ -35,6 +33,6 @@ public class App {
         } else {
             System.out.println("Sorry, your input is invalid");
         }
-
     }
 }
+
